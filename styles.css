@@ -14,6 +14,12 @@ body {
     --blue: #4fc0e8;
 }
 
+/*-webkit- safari, chrome, opera*/
+/*-moz- firefox*/
+/*-ms- internet explorer*/
+/*-0- opera*/
+
+
 /*Navigation*/
 nav {
     display: flex;
@@ -85,7 +91,7 @@ a:hover:after {
 
     .nav-large.active {
         margin: auto;
-        margin-top: 25vh;
+        margin-top: 30vh;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -131,6 +137,52 @@ a:hover:after {
 .blue-text {
     color: var(--blue);
 }
-/*Header background animation*/
 
-/*Background animation*/
+.animate-fade {
+    opacity: 0;
+    transform: translateY(-80px);
+    transition: 1s ease-in;
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/*Header background animation*/
+.stars {
+    border: 8px solid yellow;
+    height: 100vh;
+    width: 100vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.star:nth-child(even) {
+    
+}
+
+.star {
+    background-color: var(--blue);
+    width: 1rem;
+    height: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 0 0 10px darkblue, 
+    0 0 50px lightblue, 
+    0 0 100px lightblue;
+    animation: animate 5s linear infinite;
+    animation-duration: calc(100s/var(--i));
+}
+
+@keyframes animate 
+{
+    0% {
+        transform: translateY(0) translateX(calc(100vw));
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
