@@ -52,7 +52,7 @@ a:hover:after {
 .nav-toggle {
     position: absolute;
     top: 1.6rem;
-    right: 2rem;
+    right: 1.6rem;
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
@@ -61,12 +61,11 @@ a:hover:after {
     display: none;
 }
 
-.nav-toggle .bar {
+.bar {
     height: 5px;
     width: 100%;
     background-color: #4fc0e8;
     border-radius: 10px;
-
 }
 
 @media (max-width: 600px) {
@@ -89,8 +88,5 @@ a:hover:after {
 }
 
 /*Header background animation*/
-header h1 {
-
-}
 
 /*Background animation*/
