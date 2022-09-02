@@ -19,6 +19,7 @@ nav {
     display: flex;
     justify-content: flex-end;
     padding: var(--padding);
+    height: 10vh;
 }
 
 ul {
@@ -32,6 +33,7 @@ a {
     text-decoration: none;
     position: relative;
     padding: 0 5px;
+    transition: 0.5s;
 }
 
 a:after {
@@ -56,7 +58,7 @@ a:hover:after {
     display: flex;
     flex-direction: column;
     gap: 0.5rem;
-    height: 3rem;
+    height: 10vh;
     width: 3rem;
     display: none;
 }
@@ -68,25 +70,67 @@ a:hover:after {
     border-radius: 10px;
 }
 
+.nav-background .active{
+    opacity: 100%;
+}
+
 @media (max-width: 600px) {
     .nav-toggle {
         display: flex;
     }
+
     .nav-large {
         display: none;
+    }
+
+    .nav-large.active {
+        margin: auto;
+        margin-top: 25vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem;
+        z-index: 20;
+        height: 100%;
+        width: 100%;
+        font-size: 1.5rem;
+    }
+
+    .nav-overlay {
+        background-color: rgba(0, 0, 0, 0.8);
+        position: fixed;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0; 
+        opacity: 0;
+        pointer-events: none;
+        transition: 0.5s;
+    }
+    
+    .nav-overlay.active {
+        opacity: 1;
+        transition: 0.5s;
+    }
+
+    a:hover {
+        color: var(--blue);
+    }
+    a:hover:after {
+        width: 0;
     }
 }
 
 /*Hero Text*/
 .hero {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin: auto;
-    margin-top: 30vh;
+    text-align: center;
+    height: 90vh;
+    padding-top: 30vh;
 }
 
+.blue-text {
+    color: var(--blue);
+}
 /*Header background animation*/
 
 /*Background animation*/
