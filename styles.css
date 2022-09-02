@@ -1,15 +1,16 @@
 * {
     font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
-   
+    color: var(--lightText);
 }
 
 :root {
     --padding: 1rem;
+    --lightText: pink;
 }
 
 /*Navigation*/
-header {
+nav {
     display: flex;
     justify-content: flex-end;
     padding: var(--padding);
@@ -20,4 +21,25 @@ ul {
     list-style: none;
     gap: 2rem;
     margin-right: 1rem;
+}
+
+/*Hero Text*/
+.hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    height: 100vh;
+    width: 100vw;
+    transform: scale(1.1);
+    padding-bottom: 5rem;
+
+    border: 1px solid red;
+}
+
+/*Header background animation*/
+header {
+
 }
