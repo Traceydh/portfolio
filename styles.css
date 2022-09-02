@@ -1,0 +1,23 @@
+* {
+    font-family: 'Open Sans', sans-serif;
+    box-sizing: border-box;
+   
+}
+
+:root {
+    --padding: 1rem;
+}
+
+/*Navigation*/
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: var(--padding);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+    margin-right: 1rem;
+}
