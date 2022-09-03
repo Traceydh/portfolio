@@ -59,12 +59,10 @@ a:hover:after {
 
 .nav-toggle {
     position: absolute;
-    top: 1.6rem;
-    right: 1.6rem;
-    display: flex;
+    top: 1rem;
+    right: 1rem;
     flex-direction: column;
     gap: 0.5rem;
-    height: 10vh;
     width: 3rem;
     display: none;
 }
@@ -74,6 +72,7 @@ a:hover:after {
     width: 100%;
     background-color: #4fc0e8;
     border-radius: 10px;
+    z-index: 1;
 }
 
 .nav-background .active{
@@ -112,7 +111,7 @@ a:hover:after {
         opacity: 0;
         pointer-events: none;
         transition: 0.5s;
-        z-index: 19;
+        z-index: 1;
     }
     
     .nav-overlay.active {
@@ -130,9 +129,11 @@ a:hover:after {
 
 /*Hero Text*/
 .hero {
+    border: 1px solid red;
     text-align: center;
     height: 90vh;
     padding-top: 30vh;
+    
 }
 
 .blue-text {
