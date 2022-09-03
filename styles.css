@@ -112,6 +112,7 @@ a:hover:after {
         opacity: 0;
         pointer-events: none;
         transition: 0.5s;
+        z-index: 19;
     }
     
     .nav-overlay.active {
@@ -151,7 +152,6 @@ a:hover:after {
 
 /*Header background animation*/
 .stars {
-    border: 8px solid yellow;
     height: 100vh;
     width: 100vw;
     position: absolute;
@@ -180,9 +180,18 @@ a:hover:after {
 @keyframes animate 
 {
     0% {
-        transform: translateY(0) translateX(calc(100vw));
+        transform: translateY(0) translateX(calc(100vw)) scale(0.5);
     }
     100% {
         transform: translateY(100vh);
     }
+}
+
+.firefly {
+    width: 2px;
+    height: 2px;
+    background: var(--blue);
+    border-radius: 50%;
+    box-shadow: 0 0 0 5px rgba(154, 205, 50, 0.4);
+    z-index: 30
 }
