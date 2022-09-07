@@ -16,7 +16,7 @@ window.onload = function() {
 
 //Particles 
 const count = 20;
-const colors = ['blue', 'lightblue', 'white'];
+const particleBackgroundColors = ['blue', 'lightblue', 'white'];
 for (let i = 0; i < count; i ++) {
     createParticle()
 }
@@ -27,7 +27,7 @@ function createParticle() {
     const container = document.querySelector('.animation-container');
     container.append(particle);
     //random color particle 
-    particle.style.backgroundColor = colors[Math.floor(gsap.utils.random(0, 3))];
+    particle.style.backgroundColor = particleBackgroundColors[Math.floor(gsap.utils.random(0, 3))];
     //random height of particle 
     const height= gsap.utils.random(25, 30); 
     const width = gsap.utils.random(0, 15);
@@ -37,13 +37,25 @@ function createParticle() {
         //random size 
         scale: gsap.utils.random(0.5, 1)
     })
-    
+    animateParticle(particle);
 }
 
-// const timeline = gsap.timeline({defaults: {duration: 2}})
-// timeline
-//     .to('.particle', {x: '80vw'})
-//     .to('.particle', {y: '30vh'})
-//     .to('.particle', {x:'0'})
-//     .to('.particle', {y:'0'})
+function animateParticle(particle) {
+    const timeline = gsap.timeline({
+        repeat: -1,
+        defaults: {
+            duration: 3, 
+            ease: "none",
+        }})
+    timeline
+    .to('.particle', {x: '80vw'})
+    .to('.particle', {y: '30vh'})
+    .to('.particle', {x:'0'})
+    .to('.particle', {y:'0'})
+    gsap.to(particle, gsap.utils.random(5, 10), {
+        repeat: -1
+    })
+}
+
+
 
