@@ -29,11 +29,11 @@ function createParticle() {
     //random color particle 
     particle.style.backgroundColor = particleBackgroundColors[Math.floor(gsap.utils.random(0, 3))];
     //random height of particle 
-    const height= gsap.utils.random(25, 30); 
-    const width = gsap.utils.random(0, 15);
+    const heightStart = gsap.utils.random(25, 30); 
+    const widthStart = gsap.utils.random(0, 15);
     gsap.set(particle, {
-        y: `${height}vh`,
-        x: `${width}vw`,
+        y: `${heightStart}vh`,
+        x: `${widthStart}vw`,
         //random size 
         scale: gsap.utils.random(0.5, 1)
     })
@@ -44,16 +44,16 @@ function animateParticle(particle) {
     const timeline = gsap.timeline({
         repeat: -1,
         defaults: {
-            duration: 3, 
+            //random speed 
+            duration: gsap.utils.random(3, 4), 
             ease: "none",
         }})
+    //trajectory of particle     
+    const heightEnd = gsap.utils.random(25, 30);
+    const widthEnd = gsap.utils.random(80, 90); 
     timeline
-    .to('.particle', {x: '80vw'})
-    .to('.particle', {y: '30vh'})
-    .to('.particle', {x:'0'})
-    .to('.particle', {y:'0'})
-    gsap.to(particle, gsap.utils.random(5, 10), {
-        repeat: -1
+    .to(particle, {
+        x: `${widthEnd}vw`
     })
 }
 
