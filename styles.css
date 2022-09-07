@@ -164,4 +164,6 @@ a:hover:after {
     height: 10px;
     background-color: var(--blue);
     border-radius: 50%;
+    position: relative; 
+    top: 30%;
 }

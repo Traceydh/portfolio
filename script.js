@@ -15,7 +15,7 @@ window.onload = function() {
 }
 
 //Particles 
-const count = 30;
+const count = 15;
 for (let i = 0; i < count; i ++) {
     createParticle()
 }
@@ -26,3 +26,10 @@ function createParticle() {
     const container = document.querySelector('.animation-container');
     container.append(particle);
 }
+
+const timeline = gsap.timeline({defaults: {duration: 2}})
+timeline
+    .to('.particle', {x: '80vw'})
+    .to('.particle', {y: '30vh'})
+    .to('.particle', {x:'0'})
+    .to('.particle', {y:'0'})
