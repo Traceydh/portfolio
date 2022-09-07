@@ -16,6 +16,7 @@ window.onload = function() {
 
 //Particles 
 const count = 15;
+const colors = ['red', 'purple', 'pink'];
 for (let i = 0; i < count; i ++) {
     createParticle()
 }
@@ -25,6 +26,7 @@ function createParticle() {
     particle.classList.add('particle');
     const container = document.querySelector('.animation-container');
     container.append(particle);
+    particle.style.backgroundColor = colors[Math.floor(gsap.utils.random(0, 3))];
 }
 
 const timeline = gsap.timeline({defaults: {duration: 2}})
@@ -33,3 +35,4 @@ timeline
     .to('.particle', {y: '30vh'})
     .to('.particle', {x:'0'})
     .to('.particle', {y:'0'})
+
