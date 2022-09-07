@@ -33,9 +33,11 @@ function createParticle() {
     const width = gsap.utils.random(0, 15);
     gsap.set(particle, {
         y: `${height}vh`,
-        x: `${width}vw`
+        x: `${width}vw`,
+        //random size 
+        scale: gsap.utils.random(0.5, 1)
     })
-    console.log(gsap.utils.random(35, 45))
+    
 }
 
 // const timeline = gsap.timeline({defaults: {duration: 2}})
