@@ -12,6 +12,7 @@ body {
     --padding: 1rem;
     --lightText: white;
     --blue: #4fc0e8;
+    --lightblue: rgb(190, 223, 235);
 }
 
 /*-webkit- safari, chrome, opera*/
@@ -167,9 +168,10 @@ a:hover:after {
     position: relative; 
     z-index: 2;
     opacity: 0;
-    transition: opacity 2s ease-in; 
+    transition: opacity 4s ease-in; 
 }
 
 .particle-fade-in {
-    opacity: 0.7;
+    opacity: 0.5;
+    box-shadow: 0px 0px 20px 5px lightblue;
 }

@@ -16,7 +16,7 @@ window.onload = function() {
 
 //Particles 
 const count = 30;
-const particleBackgroundColors = ['blue', 'lightblue', 'white'];
+const particleBackgroundColors = ['#4fc0e8', 'lightblue', 'white'];
 for (let i = 0; i < count; i ++) {
     createParticle()
 }
@@ -58,6 +58,3 @@ function animateParticle(particle, heightStart, widthStart) {
     .to(particle, {x: `${widthStart}vw`})
     .to(particle, {y: `${heightStart}vh`, duration: gsap.utils.random(1, 2)})
 }
-
-
-
