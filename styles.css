@@ -174,14 +174,23 @@ a:hover:after {
     animation: animate linear infinite;
 }
 
-/*About me Page */
-.about {
+/*general section container page*/
+.section-container {
     height: 100vh;
     background-color: var(--grey) ;
     display: flex;
 }
 
+/*About me Page */
+.about {
+
+}
+
 section .profile {
     height: 70%;
     width: auto
+}
+
+.contact.section-container {
+    background-color: black ;
 }
