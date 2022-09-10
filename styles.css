@@ -12,6 +12,7 @@ body {
     --padding: 1rem;
     --lightText: white;
     --blue: #4fc0e8;
+    --grey: grey;
     --lightblue: rgb(190, 223, 235);
 }
 
@@ -167,14 +168,20 @@ a:hover:after {
     border-radius: 50%;
     position: relative; 
     z-index: 2;
-    opacity: 0;
-    transition: opacity 1s ease-in; 
+    box-shadow: 0px 0px 30px 5px lightblue,
+    0px 0px 100px 10px lightblue,
+    0px 0px 200px 20px lightblue;
+    animation: animate linear infinite;
 }
 
-.particle-fade-in {
-    opacity: 0.6;
-    box-shadow: 0px 0px 30px 5px lightblue,
-    0px 0px 50px 10px lightblue,
-    0px 0px 100px 20px lightblue;
+/*About me Page */
+.about {
+    height: 100vh;
+    background-color: var(--grey) ;
+    display: flex;
+}
 
+section .profile {
+    height: 70%;
+    width: auto
 }
