@@ -168,10 +168,13 @@ a:hover:after {
     position: relative; 
     z-index: 2;
     opacity: 0;
-    transition: opacity 4s ease-in; 
+    transition: opacity 1s ease-in; 
 }
 
 .particle-fade-in {
-    opacity: 0.5;
-    box-shadow: 0px 0px 20px 5px lightblue;
+    opacity: 0.6;
+    box-shadow: 0px 0px 30px 5px lightblue,
+    0px 0px 50px 10px lightblue,
+    0px 0px 100px 20px lightblue;
+
 }
