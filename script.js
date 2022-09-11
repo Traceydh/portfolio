@@ -1,4 +1,4 @@
-//navigation bar 
+//navigation bar hamburger 
 const navigationBar = document.querySelector('.nav-large');
 const hamburger = document.querySelector('.nav-toggle');
 const navBackground = document.querySelector('.nav-overlay');
@@ -9,6 +9,11 @@ hamburger.addEventListener('click', () => {
     navigationBar.classList.toggle('active');
 })
 
+//navigation bar fade in 
+gsap.from('li', {duration: 1, opacity: 0, delay: 1, stagger: 0.3})
+
+
+//hero text 
 const animateFadeElements = document.querySelectorAll('.animate-fade');
 window.onload = function() {
     animateFadeElements.forEach(element => element.classList.add('fade-in'));
