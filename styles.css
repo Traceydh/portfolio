@@ -143,7 +143,7 @@ a:hover:after {
 .animate-fade {
     opacity: 0;
     transform: translateY(-80px);
-    transition: 1s ease-in;
+    transition: 1s ease-in-out;
 }
 
 .fade-in {
@@ -153,10 +153,9 @@ a:hover:after {
 
 /*Header background animation*/
 .animation-container {
-    border: 3px solid red;
     position: absolute;
-    top: 0;
-    bottom: 0;
+    top: 20vh;
+    bottom: 10vh;
     right: 0;
     left: 0;
 }
@@ -171,26 +170,25 @@ a:hover:after {
     box-shadow: 0px 0px 30px 5px lightblue,
     0px 0px 100px 10px lightblue,
     0px 0px 200px 20px lightblue;
-    animation: animate linear infinite;
+    transition: all 1s, opacity 10s;
+    opacity: 0;
+}
+
+.particle-fade-in {
+    opacity: 0.6;
 }
 
 /*general section container page*/
-.section-container {
+.section-container 
+
+/*About me Page */
+.about {
     height: 100vh;
     background-color: var(--grey) ;
     display: flex;
 }
 
-/*About me Page */
-.about {
-
-}
-
 section .profile {
     height: 70%;
     width: auto
-}
-
-.contact.section-container {
-    background-color: black ;
 }
