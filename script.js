@@ -58,4 +58,14 @@ function animateParticle(particle, heightStart, widthStart) {
     .to(particle, {x: `${widthStart}vw`})
     .to(particle, {y: `${heightStart}vh`, duration: gsap.utils.random(1, 2)})
 
+
+    const timelineOpacity = gsap.timeline({
+        repeat: -1,
+        defaults: {
+            //random speed 
+            duration: gsap.utils.random(1, 2), 
+            delay: gsap.utils.random(0, 1)
+        }})
+        timelineOpacity
+        .to(particle, {opacity: 0})
 }
