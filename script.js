@@ -15,7 +15,7 @@ window.onload = function() {
 }
 
 //Particles 
-const count = 30;
+const count = 40;
 const particleBackgroundColors = ['#4fc0e8', 'lightblue', 'white'];
 for (let i = 0; i < count; i ++) {
     createParticle()
