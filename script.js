@@ -42,7 +42,7 @@ function createParticle() {
 
 function animateParticle(particle, heightStart, widthStart) {
     particle.classList.add('particle-fade-in');
-    const timeline = gsap.timeline({
+    const timelineTrajectory = gsap.timeline({
         repeat: -1,
         defaults: {
             //random speed 
@@ -52,9 +52,18 @@ function animateParticle(particle, heightStart, widthStart) {
     //trajectory of particle     
     const heightEnd = gsap.utils.random(40, 45);
     const widthEnd = gsap.utils.random(80, 90); 
-    timeline
+    timelineTrajectory
     .to(particle, {x: `${widthEnd}vw`})
     .to(particle, {y: `${heightEnd}vh`, duration: gsap.utils.random(1, 2)})
     .to(particle, {x: `${widthStart}vw`})
     .to(particle, {y: `${heightStart}vh`, duration: gsap.utils.random(1, 2)})
+
+
+    const timelineOpacity = gsap.timeline({
+        repeat: -1, 
+        delay: gsap.utils.random(0, 1),
+        duration: gsap.utils.random(1, 2)
+    })
+    timelineOpacity
+    .to(particle, {opacity: 0})
 }
