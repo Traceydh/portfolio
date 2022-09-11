@@ -170,8 +170,10 @@ a:hover:after {
     box-shadow: 0px 0px 30px 5px lightblue,
     0px 0px 100px 10px lightblue,
     0px 0px 200px 20px lightblue;
-    transition: all 1s;
+    transition: all 1s, opacity 0s;
+    opacity: 0.8;
 }
+
 /*general section container page*/
 .section-container 
 

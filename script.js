@@ -25,18 +25,18 @@ function createParticle() {
     const particle = document.createElement('div');
     particle.classList.add('particle');
     const container = document.querySelector('.animation-container');
-    container.append(particle);
     //random color particle 
     particle.style.backgroundColor = particleBackgroundColors[Math.floor(gsap.utils.random(0, 3))];
     //random particle position  
     const heightStart = gsap.utils.random(10, 15); 
-    const widthStart = gsap.utils.random(0, 15);
+    const widthStart = gsap.utils.random(0, 30);
     gsap.set(particle, {
         y: `${heightStart}vh`,
         x: `${widthStart}vw`,
         //random particle size 
         scale: gsap.utils.random(0.5, 1)
     })
+    container.append(particle);
     animateParticle(particle, heightStart, widthStart);
 }
 
@@ -63,7 +63,7 @@ function animateParticle(particle, heightStart, widthStart) {
         repeat: -1,
         defaults: {
             //random speed 
-            duration: gsap.utils.random(1, 2), 
+            duration: gsap.utils.random(2, 3), 
             delay: gsap.utils.random(0, 1)
         }})
         timelineOpacity
