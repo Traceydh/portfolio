@@ -232,3 +232,13 @@ section .profile {
 }
 
 /*Contact*/
+
+form {
+    width: 70%;
+    margin: 0 auto;
+}
+
+a .icon {
+    height: 5rem;
+    width: auto;
+}
