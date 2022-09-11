@@ -177,8 +177,8 @@ a:hover:after {
 /*general section container page*/
 .section-container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
-    align-items: center;
     height: 100vh;
     width: 100vw;
     padding: 2rem;
@@ -187,6 +187,10 @@ a:hover:after {
 }
 
 /*About me Page */
+.about.section-container {
+    align-items: center;
+    flex-direction: row;
+}
 .about .profile{
     margin-left: 10%;
     height: 30rem;
@@ -202,7 +206,6 @@ section .profile {
 
 /*Blogs*/
 .blog.section-container {
-    flex-direction: column;
     gap: 5%;
 }
 
@@ -220,3 +223,12 @@ section .profile {
     background-color: antiquewhite;
     transition: 0.3s;
 }
+
+/*portfolio*/
+
+#carouselExampleIndicators .carousel-item {
+    object-fit: cover;
+    height: 70vh;
+}
+
+/*Contact*/
