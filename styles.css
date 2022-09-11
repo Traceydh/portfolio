@@ -200,4 +200,23 @@ section .profile {
     width: auto
 }
 
-/*Porfolio*/
+/*Blogs*/
+.blog.section-container {
+    flex-direction: column;
+    gap: 5%;
+}
+
+.article {
+    border: 2px solid var(--blue);
+    width: 100%;
+    height: 20%;
+    padding: 1rem;
+    border-radius: 15px;
+    border-left: 10px solid var(--blue);
+}
+
+.article:hover {
+    opacity: 0.5;
+    background-color: antiquewhite;
+    transition: 0.3s;
+}

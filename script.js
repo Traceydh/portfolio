@@ -12,7 +12,6 @@ hamburger.addEventListener('click', () => {
 //navigation bar fade in 
 gsap.from('li', {duration: 1, opacity: 0, delay: 1, stagger: 0.3})
 
-
 //hero text 
 const animateFadeElements = document.querySelectorAll('.animate-fade');
 window.onload = function() {
