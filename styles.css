@@ -171,7 +171,7 @@ a:hover:after {
     0px 0px 100px 10px lightblue,
     0px 0px 200px 20px lightblue;
     transition: all 1s, opacity 0s;
-    opacity: 0.8;
+    opacity: 0;
 }
 
 /*general section container page*/

@@ -50,7 +50,7 @@ function animateParticle(particle, heightStart, widthStart) {
             ease: "none"
         }})
     //trajectory of particle     
-    const heightEnd = gsap.utils.random(15, 20);
+    const heightEnd = gsap.utils.random(0, 20);
     const widthEnd = gsap.utils.random(80, 90); 
     timelineTrajectory
     .to(particle, {x: `${widthEnd}vw`})
@@ -60,12 +60,12 @@ function animateParticle(particle, heightStart, widthStart) {
 
 
     const timelineOpacity = gsap.timeline({
-        repeat: -1,
         defaults: {
             //random speed 
             duration: gsap.utils.random(2, 3), 
             delay: gsap.utils.random(0, 1)
         }})
         timelineOpacity
-        .to(particle, {opacity: 0})
+        .to(particle, {opacity: 0, duration: 0.5, repeat: 1})
+        .to(particle, {opacity: 0.8, repeat: -1})
 }
