@@ -41,7 +41,6 @@ function createParticle() {
 }
 
 function animateParticle(particle, heightStart, widthStart) {
-    particle.classList.add('particle-fade-in');
     const timelineTrajectory = gsap.timeline({
         repeat: -1,
         defaults: {
@@ -67,5 +66,5 @@ function animateParticle(particle, heightStart, widthStart) {
         }})
         timelineOpacity
         .to(particle, {opacity: 0, duration: 0.5, repeat: 1})
-        .to(particle, {opacity: 0.8, repeat: -1})
+        .to(particle, {opacity: 0.7, repeat: -1})
 }
