@@ -180,7 +180,8 @@ nav a:hover:after {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 100vh;
+    align-items: center;
+    max-height: 100vh;
     width: 100vw;
     padding: 2rem;
 
@@ -190,10 +191,13 @@ nav a:hover:after {
 /*About me Page */
 .about.section-container {
     align-items: center;
-    justify-content: center;
     flex-direction: row;
+    justify-content: center;
     gap: 5%;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
+
 .about .profile{
     height: 25rem;
     width: auto;
@@ -212,11 +216,11 @@ nav a:hover:after {
     max-width: 30%;
 }
 
-ul {
+.blue-dot {
     list-style: none;
 }
 
-ul li::before {
+.blue-dot li::before {
     content: "\2022";
     color: var(--blue);
     font-weight: bold;
@@ -249,7 +253,11 @@ ul li::before {
 
 #carouselExampleIndicators .carousel-item {
     object-fit: cover;
-    height: 70vh;
+}
+
+.carousel.slide {
+    max-width: 40vw;
+    max-height: 60%;
 }
 
 /*Contact*/
