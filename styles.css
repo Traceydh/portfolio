@@ -280,7 +280,17 @@ a .icon {
 /*footer*/
 footer p {
     text-align: center;
-    padding: 2rem;
+    padding: 1rem;
     padding-top: 4rem;
     width: 100%;
+}
+
+.scale {
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+
+.scale:hover {
+    transform: scale(1.2);
 }
