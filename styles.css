@@ -166,7 +166,7 @@ nav a:hover:after {
     height: 10px;
     background-color: var(--blue);
     border-radius: 50%;
-    position: relative; 
+    position: absolute; 
     z-index: 2;
     box-shadow: 0px 0px 30px 5px lightblue,
     0px 0px 100px 10px lightblue,
@@ -185,7 +185,6 @@ nav a:hover:after {
     width: 100vw;
     padding: 2rem;
 
-    border: 2px solid red;
 }
 
 /*About me Page */
@@ -256,8 +255,8 @@ nav a:hover:after {
 }
 
 .carousel.slide {
-    max-width: 40vw;
-    max-height: 60%;
+    width: 50rem;
+    max-height: 40rem;
 }
 
 /*Contact*/
