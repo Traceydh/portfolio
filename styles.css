@@ -306,3 +306,13 @@ footer p {
 .scale:hover {
     transform: scale(1.2);
 }
+
+
+.fade-in {
+    opacity: 1;
+}
+
+section {
+    opacity: 0;
+    transition: 2s;
+}

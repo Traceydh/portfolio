@@ -85,3 +85,24 @@ function animateParticle(particle, heightStart, widthStart, heightEnd, widthEnd)
         .to(particle, {opacity: 0, duration: 0.5, repeat: 1})
         .to(particle, {opacity: 0.7, repeat: -1})
 }
+
+//fade page in when user scrolls 
+const menus = document.querySelectorAll("section");
+const mapImage = document.querySelector("map-image");
+
+const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting){
+            entry.target.classList.toggle("fade-in");
+            observer.unobserve(entry.target);
+        } else {
+            return;
+        }
+    })
+}, {
+    threshold: 0.5
+})
+
+menus.forEach(menu => {
+    observer.observe(menu)
+})
