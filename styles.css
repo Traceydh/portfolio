@@ -263,10 +263,24 @@ nav a:hover:after {
 
 form {
     width: 70%;
+    max-width: 600px;
     margin: 0 auto;
 }
 
 a .icon {
-    height: 5rem;
+    height: 3rem;
     width: auto;
+}
+
+.socials {
+    display: flex;
+    gap: 20%;
+}
+
+/*footer*/
+footer p {
+    text-align: center;
+    padding: 2rem;
+    padding-top: 4rem;
+    width: 100%;
 }
