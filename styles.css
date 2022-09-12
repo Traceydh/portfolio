@@ -205,6 +205,19 @@ section .profile {
     width: auto
 }
 
+ul {
+    list-style: none;
+}
+
+ul li::before {
+    content: "\2022";
+    color: var(--blue);
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+}
+
 /*Blogs*/
 .blog.section-container {
     gap: 5%;
