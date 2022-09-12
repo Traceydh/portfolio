@@ -30,7 +30,7 @@ nav {
     height: 10vh;
 }
 
-ul {
+.nav-large {
     display: flex;
     list-style: none;
     gap: 2rem;
