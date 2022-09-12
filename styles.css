@@ -243,9 +243,21 @@ nav a:hover:after {
 }
 
 .article:hover {
-    opacity: 0.5;
-    background-color: antiquewhite;
+    opacity: 0.6;
     transition: 0.3s;
+    background-color: var(--blue);
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    max-width: 60rem;
+    gap: 3rem;
 }
 
 /*portfolio*/
