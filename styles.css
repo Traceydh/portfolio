@@ -190,19 +190,26 @@ nav a:hover:after {
 /*About me Page */
 .about.section-container {
     align-items: center;
+    justify-content: center;
     flex-direction: row;
+    gap: 5%;
 }
 .about .profile{
-    margin-left: 10%;
-    height: 30rem;
+    height: 25rem;
     width: auto;
+    border: 3px solid black;
     border-radius: 50%;
+    transform: scale(1);
+    transition: all 0.2s;
+}
+
+.profile:hover {
+    transform: scale(1.03);
     border: 3px solid var(--blue);
 }
 
-section .profile {
-    height: 70%;
-    width: auto
+.about-section-child {
+    max-width: 30%;
 }
 
 ul {
