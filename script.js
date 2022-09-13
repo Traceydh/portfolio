@@ -125,14 +125,14 @@ gsap.from('.article', {
 gsap.from('.slide-left-about', {
     scrollTrigger: ".slide-left-about",
     duration: 1, 
-    x: '-150%', 
+    x: '150%', 
     delay: 1
 })
 
 gsap.from('.slide-right-about', {
     scrollTrigger: ".slide-right-about",
     duration: 1, 
-    x: '150%', 
+    x: '-150%', 
     delay: 1.5
 })
 
