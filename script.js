@@ -105,10 +105,25 @@ sections.forEach(section => {
     observer.observe(section)
 })
 
+// Animate articles in when user scrolls into viewport 
 gsap.from('.article', {
     scrollTrigger: ".article",
     duration: 1, 
     x: '-150%', 
     delay: 1, 
     stagger: 0.5
+})
+
+//animate about me section 
+gsap.from('.slide-left-about', {
+    scrollTrigger: ".slide-left-about",
+    duration: 1, 
+    x: '-150%', 
+    delay: 1
+})
+gsap.from('.slide-right-about', {
+    scrollTrigger: ".slide-right-about",
+    duration: 1, 
+    x: '150%', 
+    delay: 1.5
 })
