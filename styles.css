@@ -297,13 +297,12 @@ h2 {
 
 .project-container {
     margin-top: 3rem;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 5%;
-    width: 60%;
+    padding: 2rem;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    justify-items: center;
+
 }
 
 .project-card {
@@ -312,12 +311,14 @@ h2 {
     box-shadow: 0px 0px 20px 2px var(--blue);
     padding: 2rem;
     margin-bottom: 2rem;
+    max-width: 23rem;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     gap: 1rem;
+
 }
 
 .project-image {
