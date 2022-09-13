@@ -116,7 +116,7 @@ sections.forEach(section => {
 gsap.from('.article', {
     scrollTrigger: ".article",
     duration: 1, 
-    x: '-150%', 
+    x: '-200%', 
     delay: 1, 
     stagger: 0.5
 })
@@ -125,14 +125,14 @@ gsap.from('.article', {
 gsap.from('.slide-left-about', {
     scrollTrigger: ".slide-left-about",
     duration: 1, 
-    x: '150%', 
+    x: '250%', 
     delay: 1
 })
 
 gsap.from('.slide-right-about', {
     scrollTrigger: ".slide-right-about",
     duration: 1, 
-    x: '-150%', 
+    x: '-250%', 
     delay: 1.5
 })
 
@@ -140,14 +140,14 @@ gsap.from('.slide-right-about', {
 gsap.from('form', {
     scrollTrigger: 'form',
     duration: 1, 
-    x: '150%'
+    x: '200%'
 })
 
 //animate project section 
 gsap.from('.project-card', {
     scrollTrigger: ".project-card",
     duration: 1, 
-    x: '150%', 
+    x: '400%', 
     delay: 1, 
     stagger: 0.5
 })
