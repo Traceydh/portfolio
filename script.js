@@ -127,3 +127,10 @@ gsap.from('.slide-right-about', {
     x: '150%', 
     delay: 1.5
 })
+
+//animate contact section 
+gsap.from('form', {
+    scrollTrigger: 'form',
+    duration: 1, 
+    x: '150%'
+})

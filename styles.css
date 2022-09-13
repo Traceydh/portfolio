@@ -279,14 +279,11 @@ a:hover {
 }
 
 /*portfolio*/
-
-#carouselExampleIndicators .carousel-item {
-    object-fit: cover;
-}
-
-.carousel.slide {
-    width: 50rem;
-    max-height: 40rem;
+.porfolio {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 
 h2 {
@@ -294,6 +291,38 @@ h2 {
     width: 100vw;
     text-align: center;
     margin-bottom: 2rem;
+}
+
+.project-container {
+    margin-top: 3rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 5%;
+    width: 60%;
+}
+
+.project-card {
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px 2px var(--blue);
+    padding: 2rem;
+    margin-bottom: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.project-image {
+    height: 20rem;
+    width: 20rem;
+    object-fit: cover;
+    border-radius: 10%;
 }
 
 /*Contact*/
