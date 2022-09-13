@@ -181,7 +181,7 @@ nav a:hover:after {
     background-color: var(--blue);
     border-radius: 50%;
     position: absolute; 
-    z-index: 2;
+    z-index: -2;
     box-shadow: 0px 0px 30px 5px lightblue,
     0px 0px 100px 10px lightblue,
     0px 0px 200px 20px lightblue;
