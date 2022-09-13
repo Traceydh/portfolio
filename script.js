@@ -4,9 +4,16 @@ const hamburger = document.querySelector('.nav-toggle');
 const navBackground = document.querySelector('.nav-overlay');
 
 hamburger.addEventListener('click', () => {
-    console.log('click');
     navBackground.classList.toggle('active');
     navigationBar.classList.toggle('active');
+})
+
+const links = document.querySelectorAll('.fade-in-link'); 
+links.forEach(link => {
+    link.addEventListener('click', () => {
+        navBackground.classList.toggle('active');
+        navigationBar.classList.toggle('active');
+    })
 })
 
 //navigation bar fade in 
@@ -121,6 +128,7 @@ gsap.from('.slide-left-about', {
     x: '-150%', 
     delay: 1
 })
+
 gsap.from('.slide-right-about', {
     scrollTrigger: ".slide-right-about",
     duration: 1, 
