@@ -14,6 +14,7 @@
 
 body {
     background-color: black;
+    overflow-x: hidden;
 }
 
 /*-webkit- safari, chrome, opera*/
@@ -190,7 +191,6 @@ nav a:hover:after {
 /*About me Page */
 .about.section-container {
     align-items: center;
-    flex-direction: row;
     justify-content: center;
     gap: 5%;
     padding-top: 4rem;
@@ -212,6 +212,14 @@ nav a:hover:after {
 }
 
 .about-section-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    margin-top: 2rem;
+}
+
+.about-section-child div {
     max-width: 30%;
 }
 
@@ -240,11 +248,12 @@ nav a:hover:after {
     padding: 1rem;
     border-radius: 15px;
     border-left: 10px solid var(--blue);
+    transform: scale(1);
 }
 
 .article:hover {
-    opacity: 0.6;
     transition: 0.3s;
+    transform: scale(1.05);
     background-color: var(--blue);
 }
 
@@ -269,6 +278,12 @@ a:hover {
 .carousel.slide {
     width: 50rem;
     max-height: 40rem;
+}
+
+h2 {
+    margin: 0 auto;
+    width: 100vw;
+    text-align: center;
 }
 
 /*Contact*/

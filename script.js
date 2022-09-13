@@ -36,9 +36,9 @@ const titles = document.querySelectorAll('h2');
 titles.forEach(title => {
     for (let j = 0; j < 10; j ++) {
         const heightStart = gsap.utils.random(0, 0); 
-        const widthStart = gsap.utils.random(0, 15);
+        const widthStart = gsap.utils.random(40, 45);
         const heightEnd = gsap.utils.random(1, 1);
-        const widthEnd = gsap.utils.random(10, 15); 
+        let widthEnd = gsap.utils.random(45, 60); 
         createParticle(title, heightStart, widthStart, heightEnd, widthEnd)
     }
 })
