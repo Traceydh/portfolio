@@ -87,9 +87,7 @@ function animateParticle(particle, heightStart, widthStart, heightEnd, widthEnd)
 }
 
 //fade page in when user scrolls 
-const menus = document.querySelectorAll("section");
-const mapImage = document.querySelector("map-image");
-
+const sections = document.querySelectorAll("section");
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
         if (entry.isIntersecting){
@@ -103,6 +101,14 @@ const observer = new IntersectionObserver(entries => {
     threshold: 0.5
 })
 
-menus.forEach(menu => {
-    observer.observe(menu)
+sections.forEach(section => {
+    observer.observe(section)
+})
+
+gsap.from('.article', {
+    scrollTrigger: ".article",
+    duration: 1, 
+    x: '-150%', 
+    delay: 1, 
+    stagger: 0.5
 })
