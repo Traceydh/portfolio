@@ -134,3 +134,12 @@ gsap.from('form', {
     duration: 1, 
     x: '150%'
 })
+
+//animate project section 
+gsap.from('.project-card', {
+    scrollTrigger: ".project-card",
+    duration: 1, 
+    x: '150%', 
+    delay: 1, 
+    stagger: 0.5
+})
