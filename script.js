@@ -26,7 +26,7 @@ window.onload = function() {
 }
 
 //Particles for background 
-const count = 40;
+const count = 30;
 const particleBackgroundColors = ['#4fc0e8', 'lightblue', 'white'];
 for (let i = 0; i < count; i ++) {
     const container = document.querySelector('.animation-container');
